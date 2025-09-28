@@ -1,159 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-
-    </style>
-    <title>Document template colors</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<style>
+		@media (min-width: 700px) {
+			.content {
+				display: block;
+				padding: 10px
+			}
+		}
+		
+		@media (min-width: 576px) {
+			.sub-header, .news-header, .header-2, .unsubscribe {
+				text-align: left;
+				width: 100%;
+				padding: min(5em, 8%);
+			}
+			.header-2 {
+				background-color: #626262;
+			}
+			.main-header {
+				font-size: 5vw;
+			}
+			.img {
+				max-width: 100%;
+				height: auto;
+				aspect-ratio: 1 / 1;
+				object-fit: cover;
+				background: red;
+			}
+		}
+	</style>
+	<title>EF - Alerta Informativa</title>
 </head>
-    <!-- BODY of EMAIL -->
-    <body style="font-family: 'Saira', Courier New, sans-serif;">
-        
+	<!-- BODY of EMAIL -->
+	<body style="font-family: 'Saira', Courier New, sans-serif;">
+		
 		<!-- MAIN table over BODY -->
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-                <td align="center" style="padding:20px;">
+		<table width="100%" cellpadding="0" cellspacing="0" border="5">
+			<tr>
+				<td align="center" style="padding:20px;">
 
-                    <!-- CORE EMAIL body -->
-                    <table class="content" width="700" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
-                        <!-- HEADER -->
+					<!-- CORE EMAIL body -->
+					<table class="content" width="700" cellpadding="0" cellspacing="0" style="background-color: #ffffff;">
+						<!-- HEADER -->
 						 <tr>
-							<td align="center">
+							<td class="main-header" align="center">
 								<img src="./img/C3V25DXTKNG4DPZQWYMYP5HW3E.png">
 							</td>
 						 </tr>
-                         <!-- BODY -->
-                         <tr>
-                            <td class="header" style="padding: 10px; font-size: 32px; font-weight:bolder; line-height:0.9em">
-                                ¿Respiro para Costa Rica? Un fallo judicial sobre los aranceles globales desafía la agenda de Donald Trump
-                            </td>
-                         </tr>
-                         <tr>
-                            <td class="sub-header" style="padding: 10px;">
-                                Un tribunal federal de apelaciones de Estados Unidos asestó este viernes un golpe significativo a la agenda económica del presidente Donald Trump, al declarar ilegales sus aranceles comerciales de carácter global.
-                            </td>
-                         </tr>
-                         <tr>
-                            <td>
-                                <img src="./img/HJKIIFJG4VGEBATQQ3FZ2ZJD44.jpg" alt="Header photo" style="display:block; max-width: 700px">
-                            </td>
-                        </tr>
-                         <tr>
-                            <td class="header-2" style="padding: 10px; font-weight:bold; font-size:24px">
-                                Descubra la nueva IA de WhatsApp que cambia la forma de escribir
-                            </td>
-                         </tr>
-                         
-                         <!-- BUTTONS SECTION -->
-                         <tr>
-                            <td class="body" style="font-size:small" align="center">
-                                <table width="100%" cellpadding="50px">
-                                    <tr>
-                                        <!-- Column 1 -->
-                                        <td width="33.33%">
-                                            <table align="center" cellpadding="5">
-                                                <tr>
-                                                    <td align="center" style="padding-bottom:10px;">
-                                                        <img src="./img/digital_grey.png" alt="digital" width="40" style="display:inline-block; max-width:40px">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" style="font-weight:bold; padding: bottom 10px;">ACCESO DIGITAL ILIMITADO</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">
-                                                        <a href="#" style="background-color:#009b2f; padding: 10px 20px; color: #ffffff; text-decoration:none; font-weight:bold; display:inline-block; border-radius:10px;" target="_blank">SUSCRIBIRME</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
+						 <!-- BODY -->
+						 <tr>
+							<td class="sub-header" style="padding: 10px; font-size: 32px; font-weight:bolder; line-height:0.9em">
+								¿Respiro para Costa Rica? Un fallo judicial sobre los aranceles globales desafía la agenda de Donald Trump
+							</td>
+						 </tr>
+						 <tr>
+							<td class="news-header" style="padding: 10px;">
+								Un tribunal federal de apelaciones de Estados Unidos asestó este viernes un golpe significativo a la agenda económica del presidente Donald Trump, al declarar ilegales sus aranceles comerciales de carácter global.
+							</td>
+						 </tr>
+						 <tr>
+							<td>
+								<img src="./img/HJKIIFJG4VGEBATQQ3FZ2ZJD44.jpg" alt="Header photo" style="display:block; max-width: 700px">
+							</td>
+						</tr>
+						 <tr>
+							<td class="header-2" style="padding: 10px; font-weight:bold; font-size:24px">
+								Descubra la nueva IA de WhatsApp que cambia la forma de escribir
+							</td>
+						 </tr>
+						 
+						 <!-- BUTTONS SECTION -->
+						 <tr>
+							<td class="body" style="font-size:small" align="center">
+								<table width="100%" cellpadding="50px">
+									<tr>
+										<!-- Column 1 -->
+										<td width="33.33%">
+											<table align="center" cellpadding="5">
+												<tr>
+													<td align="center" style="padding-bottom:10px;">
+														<img src="./img/digital_grey.png" alt="digital" width="40" style="display:inline-block; max-width:40px">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" style="font-weight:bold; padding: bottom 10px;">ACCESO DIGITAL ILIMITADO</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<a href="#" style="background-color:#009b2f; padding: 10px 20px; color: #ffffff; text-decoration:none; font-weight:bold; display:inline-block; border-radius:10px;" target="_blank">SUSCRIBIRME</a>
+													</td>
+												</tr>
+											</table>
+										</td>
 
-                                        <!-- Colummn 2 -->
-                                        <td width="33.33%">
-                                            <table align="center" cellpadding="5">
-                                                <tr>
-                                                    <td align="center" style="padding-bottom:10px;">
-                                                        <img src="./img/letter_grey.png" alt="letter" width="40" style="display:inline-block; max-width:40px">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" style="font-weight:bold; padding: bottom 10px;">RECIBA OTROS BOLETINES</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">
-                                                        <a href="#" style="background-color:#009b2f; padding: 10px 20px; color: #ffffff; text-decoration:none; font-weight:bold; display:inline-block; border-radius:10px;" target="_blank">SUSCRIBIRME</a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
+										<!-- Colummn 2 -->
+										<td width="33.33%">
+											<table align="center" cellpadding="5">
+												<tr>
+													<td align="center" style="padding-bottom:10px;">
+														<img src="./img/letter_grey.png" alt="letter" width="40" style="display:inline-block; max-width:40px">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" style="font-weight:bold; padding: bottom 10px;">RECIBA OTROS BOLETINES</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<a href="#" style="background-color:#009b2f; padding: 10px 20px; color: #ffffff; text-decoration:none; font-weight:bold; display:inline-block; border-radius:10px;" target="_blank">SUSCRIBIRME</a>
+													</td>
+												</tr>
+											</table>
+										</td>
 
-                                        <!-- Column 3 -->
-                                        <td width="33.33%">
-                                            <table align="center" cellpadding="0">
-                                                <tr>
-                                                    <td align="center" style="padding-bottom:10px;">
-                                                        <img src="./img/check_grey.png" alt="check" width="40" style="display:inline-block; max-width:40px">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center" style="font-weight:bold; padding: bottom 10px;">SÍGANOS EN NUESTRAS REDES</td>
-                                                </tr>
-                                                <tr>
-                                                    <td align="center">
-                                                        <table>
-                                                            <td>
-                                                                <img src="./img/fa_home.png" alt="Facebook link" style="display:inline-block;">
-                                                            </td>
-                                                            <td>
-                                                                <img src="./img/in_home.png" alt="Instagram link" style="display:inline-block;"">
-                                                            </td>
-                                                            <td>
-                                                                <img src="./img/lin_home.png" alt="Linkedin link" style="display:inline-block;"">
-                                                            </td>
-                                                            <td>
-                                                                <img src="./img/tw_home.png" alt="Twitter X" style="display:inline-block;"">
-                                                            </td>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        
-                        <!-- FOOTER -->
-                        <tr>
-                            <td class="contact-information" align="center" style="background-color:#eaeaea; color:#9f9f9f; padding: 30px 20px; font-size: 13px; line-height: 1.3em">
-                                <img src="./img/gn_colors.png" style="display: inline-block;">
-                                <br>
-                                <br>
-                                Si ya no desea recibir este boletín <a href="#" style="text-decoration: underline; color:#626262; " >Ingrese aquí</a>
-                                <br>
-                                <br>
-                                <br>
-                                © 2025 GRUPO NACIÓN GN S.A. Derechos Reservados.
-                                <br>Servicio al Cliente
-                                <br>Whatsapp: 6118-5710
-                                <br>Correo: <a href="#" style="text-decoration: underline; color:#005f96; ">sac@nacion.com</a>
-                                <br>Central telefónica:(506) 4107-1717
-                            </td>
-                        </tr>
+										<!-- Column 3 -->
+										<td width="33.33%">
+											<table align="center" cellpadding="0">
+												<tr>
+													<td align="center" style="padding-bottom:10px;">
+														<img src="./img/check_grey.png" alt="check" width="40" style="display:inline-block; max-width:40px">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" style="font-weight:bold; padding: bottom 10px;">SÍGANOS EN NUESTRAS REDES</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<table>
+															<td>
+																<img src="./img/fa_home.png" alt="Facebook link" style="display:inline-block;">
+															</td>
+															<td>
+																<img src="./img/in_home.png" alt="Instagram link" style="display:inline-block;"">
+															</td>
+															<td>
+																<img src="./img/lin_home.png" alt="Linkedin link" style="display:inline-block;"">
+															</td>
+															<td>
+																<img src="./img/tw_home.png" alt="Twitter X" style="display:inline-block;"">
+															</td>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+						<!-- FOOTER -->
+						<tr>
+							<td class="contact-information" align="center" style="background-color:#eaeaea; color:#9f9f9f; padding: 30px 20px; font-size: 13px; line-height: 1.3em">
+								<img src="./img/gn_colors.png" style="display: inline-block;">
+								<br>
+								<br>
+								Si ya no desea recibir este boletín <a href="#" style="text-decoration: underline; color:#626262; " >Ingrese aquí</a>
+								<br>
+								<br>
+								<br>
+								© 2025 GRUPO NACIÓN GN S.A. Derechos Reservados.
+								<br>Servicio al Cliente
+								<br>Whatsapp: 6118-5710
+								<br>Correo: <a href="#" style="text-decoration: underline; color:#005f96; ">sac@nacion.com</a>
+								<br>Central telefónica:(506) 4107-1717
+							</td>
+						</tr>
 
-                        <tr>
-                            <td class="unsubscribe" align="center" style="color: #626262; font-size: 9px; padding: 40px 0 20px 0">
-                                If you want to unsuscribe from our mailing list, unsubscribe <a href="#" style="text-decoration: underline; color: #626262;">here</a>.
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </body>
+						<tr>
+							<td class="unsubscribe" align="center" style="color: #626262; font-size: 9px; padding: 40px 0 20px 0">
+								If you want to unsuscribe from our mailing list, unsubscribe <a href="#" style="text-decoration: underline; color: #626262;">here</a>.
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>

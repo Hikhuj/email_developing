@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger Ulate Rivera</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Para SEO description de la pagina, importante porque describe el sitio y para SEO es lo que puede aparecer-->
+    <meta name="description" content="Hi, I'm Roger Ulate Rivera, a developer with a passion for creating innovative and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I'm always looking for new challenges to take on.">
+    <!-- Para SEO -->
+    <meta name="keywords" content="roger ulate rivera, developer, html, css, javascript, ruby, ruby on rails, python, html email, html banner, mysql, postgresql, git, github">
+    <!-- Para SEO -->
+    <meta name="author" content="Roger Ulate Rivera">
+    <!-- META dato importante para Google que es si el sitio es indexado o no y si tiene que seguir los enlaces para SEO tambien-->
+    <meta name="robots" content="index, follow">
+    <!-- El theme-color es un metadato con el que podemos cambiar el color del navegador, es bastante bueno para SEO -->
+    <meta name="theme-color" content="#f24711">
+    <!-- Para agregarle favicon para icono en el web arriba en la pestania-->
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- Este sirve para agregarle un favicon que no sea pequenio pero que pasemos una imagen a la pestania -->
+    <link rel="icon" href="img/personal_photo.PNG" type="image/png">
+
+    <!-- OPEN GRAPH-->
+    <meta property="og:title" content="Roger Ulate Rivera">
+    <meta property="og:description" content="Hi, I'm Roger Ulate Rivera, a developer with a passion for creating innovative and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I'm always looking for new challenges to take on.">
+    <meta property="og:image" content="img/personal_photo.PNG">
+    <meta property="og:url" content="https://RogerUlateRivera.github.io/portfolio/">
+
+    <style>
+        h1 {
+            color:blue
+        }
+
+        body {
+            background-color:azure;
+        }
+
+        .link {
+            color: red;
+        }
+
+        /**
+         * El uso de pseudoclases es para aplicar estilos cuando el usuario interactua con el elemento
+         */
+        .link:hover {
+            outline: 3px solid red;
+        }
+
+        .link:active {
+            outline: 3px solid blue;    
+        }
+
+        .link:focus {
+            outline: 3px solid yellow;
+        }
+
+        #show {
+            background: #09f;
+            color: white;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="#home">
+        <h1>Welcome</h1>
+        <h1>Roger Ulate Rivera</h1>
+        <p>Developer</p>
+        <img src="img/personal_photo.PNG" alt="Roger Ulate Rivera photo profile" width="300px" height="300px">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education </a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#courses">Courses & Certifications</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Hikhuj" target="_blank" rel="noreferrer">Github</a>
+            <a href="https://www.linkedin.com/in/rulaterivera" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+    </header>
+    
+    <!-- Dialog TAG -->
+    <dialog id="dialog">
+        <h1>Did you know that you can offer me a job too?</h1>
+        <p>This is amazing!</p>
+        <button id="hide">Know more</button>
+    </dialog>
+
+    <button id="show">Show more info</button>
+
+    <script>
+        window.show.addEventListener("click", () => {
+            window.dialog.showModal();    
+        })
+
+        window.hide.addEventListener("click", () => {
+            window.dialog.close();    
+        })
+    </script>
+
+    <main>
+        <p>Hi, I'm Roger Ulate Rivera, a developer with a passion for creating innovative and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I'm always looking for new challenges to take on.</p>
+        <aside>
+            <header id="skills">
+                <h2>Skills</h2>
+            </header>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+                <li>Ruby on Rails (RoR)</li>
+                <li>Python</li>
+                <li>HTML Email</li>
+                <li>HTML Banner</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </aside>
+        <section>
+            <header id="education">
+                <h2>Education</h2>
+            </header>
+            <ul>
+                <li>Bach. Computer Engineering</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="projects">Projects</h2>
+            <article>
+                <header>
+                    <h2>Project 1</h2>
+                </header>
+                <p>Project 1 description</p>
+                <footer>
+                    <small>Project 1 small</small>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Project 2</h2>
+                </header>
+                <p>Project 2 description</p>
+                <footer>
+                    <small>Project 2 small</small>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Project 3</h2>
+                </header>
+                <p>Project 3 description</p>
+                <footer>
+                    <small>Project 3 small</small>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <h2 id="experience">Experience</h2>
+            <ul>
+                <li>IT Manager/ Graphic Designer for Confucious Institute of University of Costa Rica – 2014-2015</li>
+                <li>Support, Junior Data Entry, Mid Data Entry, Senior Data Entry, Technical Specialist for Schoolmint – 2015-2025</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="courses">Courses & Certifications</h2>
+            <ul>
+                <li>Data Analytics Essentials <strong>Cisco Networking Academy</strong></li>
+                <li>Introduction to Cybersecurity <strong>Cisco Networking Academy</strong></li>
+                <li>English Level B2 TOEFL ITP <strong>ULACIT</strong></li>
+                <li>Linux Server Essentials <strong>Open Consulting</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Frequent questions</h2>
+            <details>
+                <summary>What is your current English proficiency level (spoken and written)?</summary>
+                <p>B2.</p>
+            </details>
+            <details>
+                <summary>What are your salary expectations (gross monthly amount in USD)?</summary>
+                <p>$0000 - $0000.</p>
+            </details>
+            <details>
+                <summary>Do you have experience coding HTML emails and digital banners, both from scratch and using templates?</summary>
+                <p>I have experienced enhancing some features from previous job, internal tools mostly.</p>
+            </details>
+            <details>
+                <summary>Are you comfortable ensuring cross-browser and cross-device compatibility in your work?</summary>
+                <p>Another previous background I have is Advertising Design, definitely visually appealing and symmetry is important for me.</p>
+            </details>
+            <details>
+                <summary>Do you have general experience with responsive design and front-end technologies (HTML, CSS, JavaScript)?</summary>
+                <p>My last year I developed several skills to work more on this. My core used to fix bugs on hidden code.</p>
+            </details>
+            <details>
+                <summary>Our company follows a hybrid work model (3 days in-office per week). Would you be comfortable with this arrangement?</summary>
+                <p>Hybrid work is not an unknown model for me, I'll be comfortable.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2 id="contact">Contact me</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <!-- FORM: name -->
+                     <div>
+                        <label>Name
+                            <input type="text" id="name" name="name" placeholder="John Smith" required>
+                        </label>
+                     </div>
+
+                    <div>
+                        <label>Email
+                            <input type="email" id="email" placeholder="johnsmith@example.com" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional information</legend>
+
+                    <!-- FORM: name -->
+                     <div>
+                        <label>Phone number
+                            <input type="tel" id="name" name="phone" placeholder="+### ####-####" required>
+                        </label>
+                     </div>
+
+                    <div>
+                        <label>Birthdate
+                            <input type="date" id="birthdate" name="birthdate">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+
+                    <!-- FORM: name -->
+                     <div>
+                        <label for="why">You need my help on
+                            <select name="why" id="why">
+                                <option value="1">Job offer</option>
+                                <option value="2">Questions</option>
+                                <option value="3">More information</option>
+                            </select>
+                        </label>
+                     </div>
+
+                    <div>
+                        <label for="terms">Do you accept the terms?
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </label>
+                    </div>
+                    <div>
+                        <datalist id="languages">
+                            <option value="javascript"></option>
+                            <option value="html"></option>
+                            <option value="css"></option>
+                            <option value="ruby"></option>
+                            <option value="python"></option>
+                        </datalist>
+                        <label>I need help with...
+                            <input list="languages" name="languages">
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- FORM: submit -->
+                <button>Send question</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Copyright &copy; 2025 | Roger Ulate Rivera
+        <a href="mailto:rogerulate.jobs@gmail.com">email me</a>
+        <a href="tel:+50688888888">call me</a>
+        <a href="https://api.whatsapp.com/send?phone=50688888888">whatsapp me</a>
+    </footer>
+</body>
+</html>

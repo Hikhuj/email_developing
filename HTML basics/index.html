@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="">
+        <style>
+          body {
+            background-color: aquamarine;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          article {
+            border: 5px #c96d6d dotted;
+            height: 100%;
+            min-height: 200px;
+            width: 100%;
+            min-width: 200px;
+          }
+
+          aside {
+            display: inline-block;
+            max-width: 50px;
+            width: 100%;
+            
+          }
+
+          .standarized-shape {
+            background-color: antiquewhite;
+            margin: 0;
+            border: 1px dotted #000000;
+            border-radius: 0.5rem;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+          }
+
+          .standarized-shape-medium {
+            min-height: 50px;
+            height: 100px;
+            background-color: blue;
+            width: 100%;
+            min-width: 200px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px #c96d6d solid;
+          }
+
+          .standarized-shape article {
+            max-width: 1000px;
+            width: 100%;
+          }
+
+          .standarized-shape article section {
+            width: 100%;
+          }
+
+          .caprasimo-regular {
+              font-family: "Caprasimo", serif;
+              font-weight: 400;
+              font-style: normal;
+          }
+
+          header {
+              height: 5rem;
+          }
+
+          .container {
+              display: flex;
+              flex-direction: column;
+              max-width: 1200px;
+              width: 100%;
+          }
+
+          #menu {
+            min-height: 45px;
+            height: 100%;
+          }
+
+          #menu ul, #menu li {
+            text-decoration: none;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+          }
+
+          #menu ul {
+            width: 100%;
+            text-align: left;
+          }
+
+          #menu li {
+            display: inline-block;
+            position: relative;
+          }
+
+          #menu ul > li {
+            font-family: "Caprasimo", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+          #menu a {
+            display: block;
+            line-height: 45px;
+            padding: 0 14px;
+            text-decoration: none;
+            color: #000000;
+            margin-left: 5px;
+          }
+
+          #menu li a:hover {
+            color:rgb(159, 159, 159);
+            background:#000000;
+          }
+
+
+
+          .footer-menu {
+
+          }
+
+          .footer-disclaimer {
+
+          }
+            
+          @media (width < 768px) {
+            body {
+              background-color: rgb(198, 255, 236);
+              margin: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            article {
+              border: 5px #a30808 dotted;
+              height: 100%;
+              min-height: 200px;
+              width: 100%;
+              min-width: 200px;
+            }
+
+            .standarized-shape {
+              background-color: antiquewhite;
+              margin: 0;
+              border: 1px dotted #000000;
+              border-radius: 0.3rem;
+              max-width: 768px;
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <!-- HEADER -->
+            <header class="caprasimo-regular standarized-shape">Portafolio de Roger Ulate Rivera</header>
+
+            <!-- NAVIGATION MENU -->
+            <nav id="menu" class="standarized-shape">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            
+            <!-- MAIN CONTENT -->
+            <main class="standarized-shape">
+              <h1>Main Section</h1>
+              <article>
+                <h1>Article Section</h1>
+                <section class="standarized-shape-medium">
+                  <h2>Section 1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula est, rhoncus at ultrices non, fringilla dignissim lacus. Ut bibendum, lectus ac varius ultrices, sapien nunc auctor massa, vel posuere orci ipsum ut tortor. Nulla consequat libero eu pellentesque tincidunt. Sed rhoncus convallis egestas. Sed rutrum ex sed tortor condimentum malesuada. Curabitur vitae purus ultrices, semper est sit amet, elementum mauris. Nunc eleifend, quam at faucibus scelerisque, velit justo ultrices orci, a porttitor est odio id est. Aenean nec purus in massa mollis tempus et dapibus elit. Mauris nec elementum felis. Integer suscipit ipsum et laoreet porttitor. Morbi auctor ornare urna, id accumsan nisl rhoncus et. Vestibulum vitae imperdiet lectus. Aliquam malesuada mauris lorem, at euismod nulla venenatis tristique.</p>
+                </section>
+                <section class="standarized-shape-medium">
+                  <h2>Section 2</h2>
+                  <p>Proin ut orci mauris. Ut rhoncus mauris vitae quam sollicitudin, ut tincidunt sem convallis. Nunc ultricies erat egestas convallis rutrum. Maecenas mauris lorem, auctor sit amet nibh vestibulum, luctus rhoncus sem. Suspendisse potenti. Nunc nec elit mauris. Morbi at ligula elit. Nunc hendrerit suscipit metus, quis imperdiet mauris viverra accumsan. Sed luctus est eu eros placerat euismod. Duis eleifend quis risus porta euismod. Vestibulum accumsan sollicitudin gravida. Pellentesque at maximus velit. Proin sit amet pretium diam. Sed libero enim, euismod et orci a, tincidunt varius purus.</p>
+                </section>
+              </article>
+            </main>
+
+            <!-- RIGHT SIDE -->
+            <aside class="standarized-shape">
+              <h1>Aside Section</h1>
+              <p>Sed tellus lacus, dictum vel elit vitae, suscipit placerat massa. Etiam placerat odio non libero tristique, et iaculis lorem sagittis. Integer scelerisque eros sed felis venenatis aliquam. Nunc ultricies vitae urna quis placerat. Nullam vitae arcu efficitur, laoreet magna ultricies, iaculis augue. Pellentesque suscipit lacinia mauris, et sodales ligula blandit ut. Cras iaculis aliquam enim, nec ultrices erat sollicitudin et. Aliquam luctus, leo et eleifend mattis, quam sapien ullamcorper ipsum, eget dictum mauris mi a dolor. Integer at imperdiet libero. Ut vitae hendrerit velit.</p>
+            </aside>
+
+            <!-- FOOTER -->
+            <footer class="standarized-shape">
+              <ul class="footer-menu">
+                <li>Contact Us</li>
+                <li>Our Services</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li>Carrer</li>
+              </ul>
+              <p class="footer-disclaimer">Website Copyright 2025 Roger - All rights reserved || Designed by: Roger</p>
+            </footer>
+            <script src="" async defer></script>
+        </div>
+    </body>
+</html>
